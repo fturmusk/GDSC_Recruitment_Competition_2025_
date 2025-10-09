@@ -13,23 +13,23 @@ def main():
     y_train, df_test, df_train, df, df__test = load_data(path1,path2)
     nan_values_count, numerics_columns, object_columns = column_name(df_train)
 
-    #y_train_describe(df_train)
-    #train_test_visualisation(df_train, df_test)
-    #train_info(df_train)
+    y_train_describe(df_train)
+    train_test_visualisation(df_train, df_test)
+    train_info(df_train)
     
     nan_values_count = cont_nan_values(df_train)
 
-    #numeric_object_nan(nan_values_count, numerics_columns, object_columns)
-    #object_unic(object_columns, df_train)
+    numeric_object_nan(nan_values_count, numerics_columns, object_columns)
+    object_unic(object_columns, df_train)
 
     train_transform, test_transform = nan_values_transformer(df_train, df_test, numerics_columns, object_columns, y_train)
 
-    #train_histplot(numerics_columns,train_transform)
-    #train_subplot(numerics_columns, train_transform)
-    #train_contplot(object_columns, train_transform, df)
+    train_histplot(numerics_columns,train_transform)
+    train_subplot(numerics_columns, train_transform)
+    train_contplot(object_columns, train_transform, df)
 
     train_final, test_final = onehot_encoder(object_columns,train_transform, test_transform )
-    #train_final, test_final = sqrt_high_values(train_final,test_final)
+    train_final, test_final = sqrt_high_values(train_final,test_final)
 
     best_model = best_model_(train_final,y_train)
 
