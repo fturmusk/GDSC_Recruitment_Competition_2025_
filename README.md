@@ -6,12 +6,14 @@ Several years ago in the late 2060s, oceanic salvage drones began dredging up st
 
 Projektstruktur
 
-├── data/                 # CSV-Datei
-├── src/
-│   ├── preprocess.py     # Daten laden, Feature Engineering, Scaling
-│   ├── model.py          # Training der Modelle
-│   ├── exploration.py    # visualisation der Dataset
-|   ├── visualisation.py            # Optional: 
-|
-├── README.md                 
-└── main.py               # Hauptskript zur Ausführung
+=> data/                 # CSV-Datei
+
+=>src/
+  ---preprocess.py     # Daten laden, Feature Engineering, Scaling
+  ---model.py          # Training der Modelle
+  ---exploration.py    # visualisation der Dataset
+  ---visualisation.py            # Optional: 
+
+=>README.md                 
+
+=>main.py               # Hauptskript zur Ausführung
