@@ -7,11 +7,11 @@ from src.visualisation import train_histplot,train_histplot, train_subplot, trai
 from src.model import best_model_,test_predict_and_submit
 
 def main():
-    path1 = r"C:\Users\batoc\Desktop\Github\1\data\data_train.csv"
-    path2 = r"C:\Users\batoc\Desktop\Github\1\data\data_test.csv"
+    path1 = r"C:\Users\batoc\Desktop\Github\a-tour-of-machine-learning-2021\data\MiNDAT.csv"
+    path2 = r"C:\Users\batoc\Desktop\Github\a-tour-of-machine-learning-2021\data\MiNDAT_UNK.csv"
     
     y_train, df_test, df_train, df, df__test = load_data(path1,path2)
-    nan_values_count, numerics_columns, object_columns = column_name(df_train)
+    columns_names, object_columns, numerics_columns = column_name(df_train)
 
     y_train_describe(df_train)
     train_test_visualisation(df_train, df_test)
@@ -22,7 +22,7 @@ def main():
     numeric_object_nan(nan_values_count, numerics_columns, object_columns)
     object_unic(object_columns, df_train)
 
-    train_transform, test_transform = nan_values_transformer(df_train, df_test, numerics_columns, object_columns, y_train)
+    train_transform, test_transform, y_train = nan_values_transformer(df_train, df_test, numerics_columns, object_columns, y_train)
 
     train_histplot(numerics_columns,train_transform)
     train_subplot(numerics_columns, train_transform)
