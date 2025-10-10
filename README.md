@@ -1,7 +1,17 @@
-# Dokumentation von a-tour-of-machine-learning-2021
+GDSC Recruitment Competition 2025
 
-## initialisation von dem projeckt
 
-"""bash 
-git init
-"""
+Overview
+Several years ago in the late 2060s, oceanic salvage drones began dredging up strangely familiar artifacts: black, coral-like growths, embedded with shimmering vein patterns, left by the past extraterrestial contact from 2025. The FBX codenamed these substances CORRUCYSTS, via the closest romanization available from the inhereted context. Early analysis suggested that they were fragments of a distributed alien biocomputer network.
+
+Projektstruktur
+
+├── data/                 # CSV-Datei
+├── src/
+│   ├── preprocess.py     # Daten laden, Feature Engineering, Scaling
+│   ├── model.py          # Training der Modelle
+│   ├── exploration.py    # visualisation der Dataset
+|   ├── visualisation.py            # Optional: 
+|
+├── README.md                 
+└── main.py               # Hauptskript zur Ausführung
