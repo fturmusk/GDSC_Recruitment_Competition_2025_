@@ -10,8 +10,11 @@ Projektstruktur
 
 =>src/
   ---preprocess.py     # Daten laden, Feature Engineering, Scaling
+  
   ---model.py          # Training der Modelle
+  
   ---exploration.py    # visualisation der Dataset
+  
   ---visualisation.py            # Optional: 
 
 =>README.md                 
