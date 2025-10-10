@@ -17,7 +17,7 @@ def load_data(path, path2):
 
     y_train = df.iloc[:, -1]
     df_train = df.iloc[:, 1:-1]
-    df_test = df.iloc[:, 1:]
+    df_test = df__test.iloc[:, 1:]
 
     return y_train, df_test, df_train, df, df__test
 
@@ -38,7 +38,7 @@ def cont_nan_values(df_train):
     return nan_values_count
 
 def nan_values_transformer(df_train, df_test, numerics_columns, object_columns, y_train):
-
+    print(object_columns)
     numerical_transformers = SimpleImputer(strategy= "median")
     categorical_transformers = Pipeline(steps=[("imputer", SimpleImputer(strategy = "most_frequent"))])
 
@@ -65,7 +65,7 @@ def nan_values_transformer(df_train, df_test, numerics_columns, object_columns, 
     test_transform[numerics_columns] = test_transform[numerics_columns].astype("float64")
 
     
-    return train_transform, test_transform
+    return train_transform, test_transform, y_train
 
 def onehot_encoder(object_columns,train_transform, test_transform ):
     
