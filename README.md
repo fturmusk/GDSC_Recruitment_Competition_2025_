@@ -14,19 +14,35 @@ The objective of this exercise is to reconstruct the "CORRUCYSTIC_DENSITY" featu
 🔗 Competition link:
 https://www.kaggle.com/competitions/recruitment-task-for-gdsc-ml/overview
 
-Projektstruktur
 
-=> data/                 # CSV-Datei
+🗂️ Project Structure
 
-=>src/
-  ---preprocess.py     # Daten laden, Feature Engineering, Scaling
-  
-  ---model.py          # Training der Modelle
-  
-  ---exploration.py    # visualisation der Dataset
-  
-  ---visualisation.py            # Optional: 
+GDSC_Recruitment_Competition_2025/
+│
+├── data/
+│   ├── train.csv
+│   ├── test.csv
+│   └── sample_submission.csv
+│
+├── src/
+│   ├── preprocess.py        # Loading, cleaning, engineering, scaling
+│   ├── exploration.py       # Exploratory data analysis
+│   ├── model.py             # Model training + evaluation
+│   └── visualisation.py     # Additional plots
+│
+├── main.py                  # Central execution pipeline
+├── requirements.txt         # Dependencies
+└── README.md
 
-=>README.md                 
 
-=>main.py               # Hauptskript zur Ausführung
+⚙️ Installation
+
+
+git clone https://github.com/fturmusk/GDSC_Recruitment_Competition_2025_.git
+cd GDSC_Recruitment_Competition_2025_
+
+pip install -r requirements.txt
+
+▶️ Usage
+
+python main.py
