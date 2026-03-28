@@ -1,15 +1,18 @@
 GDSC Recruitment Competition 2025
 
 
-Overview
-Several years ago in the late 2060s, oceanic salvage drones began dredging up strangely familiar artifacts: black, coral-like growths, embedded with shimmering vein patterns, left by the past extraterrestial contact from 2025. The FBX codenamed these substances CORRUCYSTS, via the closest romanization available from the inhereted context. Early analysis suggested that they were fragments of a distributed alien biocomputer network.
+🧩 Overview
 
+This project is part of the GDSC Recruitment Competition 2025, a machine learning challenge organized by GDSC‑NSUT. The task consists of predicting the CORRUCYSTIC_DENSITY of alien‑like bio‑computational artifacts called CORRUCYSTS, discovered in a fictional future scenario. This storyline originates from the official competition description on Kaggle.
+
+The dataset contains both training and test samples with numerical features.
+Your goal is to train a regression model that accurately reconstructs the density value for unseen test samples.
 
 
 The objective of this exercise is to reconstruct the "CORRUCYSTIC_DENSITY" feature of the test sample using the existing data.
 
-
-Link kaggle : https://www.kaggle.com/competitions/recruitment-task-for-gdsc-ml/overview
+🔗 Competition link:
+https://www.kaggle.com/competitions/recruitment-task-for-gdsc-ml/overview
 
 Projektstruktur
 
