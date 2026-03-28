@@ -17,6 +17,7 @@ https://www.kaggle.com/competitions/recruitment-task-for-gdsc-ml/overview
 
 🗂️ Project Structure
 
+```
 GDSC_Recruitment_Competition_2025/
 │
 ├── data/
@@ -33,6 +34,7 @@ GDSC_Recruitment_Competition_2025/
 ├── main.py                  # Central execution pipeline
 ├── requirements.txt         # Dependencies
 └── README.md
+```
 
 
 ⚙️ Installation
